@@ -1,0 +1,437 @@
+body{
+    background-color: rgba(219, 218, 218, 0.801);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* navbar */
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    border-bottom: 2px solid rgb(2, 78, 97);
+    margin-bottom: 20px;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+/* navbar logo*/
+.logo h4 {
+    transition: box-shadow 0.3s ease;
+    color: #007bff;
+    margin: 0;
+    font-size: 25px;
+    border: #0056b3 2px solid;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+.logo h4:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+
+/* NAV */
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* navbar links*/
+.nav a {
+    transition: box-shadow 0.5s ease ;
+    color: black;
+    background-color: rgb(161, 196, 212);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav a:hover {
+    background-color: #0056b3;
+    color: white;
+    box-shadow: 0 0.3rem 0.6rem rgb(153, 153, 153);
+}
+/* titulo principal */
+.head{
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(0, 40, 58);
+    background-color: white;
+    padding: 8px 5px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    /* box-shadow: 0 0.3rem 0.5rem gray; */
+}
+/* .subtitulo */
+.subtitulo{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: rgb(2, 109, 158);
+    padding: 15px 10px;
+    width: 90%;
+    border-radius: 20px;
+    /* box-shadow: 0 0.3rem 0.6rem gray; */
+}
+/* titulo de los productos */
+.titulo-produc{
+    text-align: center;
+    color: rgb(0, 40, 58);
+    background-color: white;
+    border:  rgb(161, 196, 212) solid;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    width: 90%;
+    box-shadow: 0 0.3rem 0.6rem rgb(155, 154, 154);
+}
+/* cards de las imagenes de los productos */
+.contenedor-img{
+    text-align: center;
+    margin: 0 auto;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.contenedor-img h1{
+    color: rgb(2, 109, 158) ;
+}
+.contenedor-img h2{
+    transition: color 0.3s ease;
+    color: rgb(0, 39, 168) ;
+}
+.contenedor-img img:hover{
+    cursor: pointer;
+}
+.contenedor-img h2:hover{
+    cursor: pointer;
+    color: #027cff;
+}
+/* botones configuracion */
+button{
+    transition: box-shadow 0.5s ease;
+    padding: 7.5px 7.5px;
+    margin: 15px 15px;
+    color: white;
+    background-color: #007bff;
+    border: #007bff solid;
+    border-radius: 6px;
+}
+button:hover{
+    background-color: #0056b3;
+    border-color:#0056b3;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+
+
+
+.PRODUCTO{
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    background-color: white;
+    padding: 15px 0px;
+    border: rgb(161, 196, 212) solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 270px;
+    
+}
+.PRODUCTO:hover {
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem 0.2rem gray;
+    transform: translateY(-10px);
+}
+.PRODUCTO img, .PRODUCTO-silla img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+
+}
+.PRODUCTO article, .PRODUCTO-silla article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PRODUCTO-silla{
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    background-color: white;
+    padding: 15px 0px;
+    border: rgb(255, 0, 0) solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 270px;
+}
+.PRODUCTO-silla h1{
+    color: red;
+}
+.PRODUCTO-silla button{
+    background-color: red;
+    border: rgb(255, 0, 0) solid;
+}
+.PRODUCTO-silla h2{
+    color: rgb(110, 0, 0);
+}
+.PRODUCTO-silla h2:hover{
+    color: rgb(255, 100, 100);
+}
+.PRODUCTO-silla:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem 0.6rem rgb(121, 41, 41);
+    transform: translateY(-10px);
+}
+/* TITULO DE LAS RESEÑAS*/
+.titulo-reseña{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: white;
+    width: 80%;
+    padding: 0 20px;
+    color: rgb(0, 40, 58);
+    border:  rgb(161, 196, 212) solid ;
+    border-radius: 20px;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+/* SUBTITULO DE LAS RESEÑAS */
+
+/* .subtitulo-res{ 
+    transition: transform 0.4s ease, font-size 0.4s ease;
+    text-align: center;
+    color: rgb(248, 81, 81);
+    font-size: 22px;
+    margin: 0 auto;
+    width: 30%;
+    background-color: rgb(188, 228, 255);
+    border-radius: 20px;
+}
+.subtitulo-res:hover{
+    cursor: pointer;
+    font-size: 26px ;
+    transform: translateY(-10px);
+}
+*/
+
+/* reseñas!!!! */
+
+.reseñas{
+    text-align: center;
+    margin: 0 auto;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    width: 80%;
+}
+.maria-perez:hover, .alberto-campos:hover, .natalia-gomez:hover, .jose-flores:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem rgb(109, 109, 109)
+}
+.reseñas .perfil{
+    transition: box-shadow 0.3s ease;
+    background-color: lightblue;
+    padding: 12px;
+    border-radius: 100%;
+    
+}
+.reseñas .perfil:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+.reseñas h1{
+    color: rgb(0, 8, 56);
+    font-size: 2rem;
+}
+.reseñas h2{
+    color: rgb(2, 109, 158);
+    font-size: 28px;
+}
+.reseñas p{
+    color: rgb(87, 86, 86);
+    font-size: 15px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+.ESTRELLAS{
+    font-size: 26px;
+    color: gold;
+}
+.maria-perez{
+    transition: box-shadow 0.5s ease;
+    background-color: white;
+    border: rgb(161, 196, 212) solid;
+    border-radius: 8px;
+    width: 30%;
+    padding: 12px 15px;
+}
+.jose-flores{
+    transition: box-shadow 0.5s ease;
+    background-color: white;
+    border: rgb(161, 196, 212) solid;
+    border-radius: 8px;
+    width: 30%;
+    padding: 12px 15px;
+}
+.natalia-gomez{
+    transition: box-shadow 0.5s ease;
+    background-color: white;
+    border: rgb(161, 196, 212) solid;
+    border-radius: 8px;
+    width: 30%;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+.alberto-campos{
+    transition: box-shadow 0.5s ease;
+    background-color: white;
+    border: rgb(161, 196, 212) solid;
+    border-radius: 8px;
+    width: 30%;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+/* Escondemos el cuadrito del checkbox */
+.check-leer-mas {
+    display: none;
+}
+
+/* Escondemos el texto extra al principio */
+.texto-extra {
+    display: none;
+}
+
+/* CUANDO EL CHECKBOX ESTÉ MARCADO: Mostramos el texto extra */
+.check-leer-mas:checked ~ p .texto-extra {
+    display: inline;
+}
+
+/* ESTILO DEL BOTÓN "LEER MÁS" */
+.boton-leer {
+    display: block;
+    color: #002d5f;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* Ponemos el nombre "Leer más" al botón */
+.boton-leer::before {
+    content: "Leer más";
+}
+
+/* CUANDO ESTÉ MARCADO: Cambiamos el texto del botón a "Leer menos" */
+.check-leer-mas:checked ~ .boton-leer::before {
+    content: "Leer menos";
+}
+
+
+
+/* los ultimos de todo, donde estan los links y texto */
+.mi-footer{
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+    color: gray;
+}
+.mi-footer a{
+    transition: color 0.3s ease;
+    color: rgb(161, 196, 212);
+    margin: 0px 30px;
+    text-decoration: none;
+}
+.mi-footer a:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+
+}
+.precio-anterior{
+    font-size: 16px;
+    color: rgb(158, 158, 158);
+    text-decoration: line-through;
+    border: 1.5px rgb(210, 232, 252) solid;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+.etiqueta {
+    transition: box-shadow 0.3s ease;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border-radius: 8px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.etiqueta:hover{
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem gray;
+}
+
+
+
+/* configuracion de celular */
+@media (max-width: 600px) {
+
+.contenedor-img {
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto {
+    width: 90%; /* ocupa casi toda la pantalla */
+}
+
+}
+@media (max-width: 600px) {
+
+.header {
+    flex-direction: column;
+    gap: 10px;
+}
+.logo{
+    margin-bottom: 5px;
+}
+.nav ul {
+    display: flex;            /* Activa la fila horizontal */
+    flex-wrap: wrap;          /* ¡CLAVE! Si no caben, bajan ordenadamente */
+    justify-content: center;   /* Los centra en la pantalla */
+}
+
+.nav ul li a{
+    flex: 1 1 40%;        /* Hace que los botones ocupen casi la mitad de la fila */
+    font-size: 12px;      /* Reduce el texto un poco más */
+    padding: 7px 7px;
+}
+
+}
+@media (max-width: 600px) {
+
+    .reseñas{
+    flex-direction: column;
+    align-items: center;        
+    
+    }
+
+
+    .maria-perez, .alberto-campos, .jose-flores, .natalia-gomez{
+        width: 80%;
+    }
+
+}
